@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------My Styles---------------*/
+
+body {
+	background-color: #f2f2f2;
+	font: 18px "Myriad Pro Regular", sans-serif;
+	color: #dddee3;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover {
+	color: #eb5055;
+	transition: color 0.5s;
+}
+input[type="text"] {
+	background-color: #ca4549;
+	height: 35px;
+	width: 620px;
+	color: #db6568;
+	padding: 0 10px;
+	margin: 15px 10px 0 20px;
+}
+.buttons {
+	display: inline-block;
+	color: #6e7694;
+	margin: 25px 10px 25px 0;
+	border: 1px solid #6e7694;
+	text-align: center;
+}
+.buttons:hover {
+	color: #dedede;
+	border-color: #dedede;
+}
+.wrapper {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*----------------------HEAD----------------------*/
+
+header {
+	width: 100%;
+	background-color: #303441;
+	border-bottom: 10px solid #373b4a;
+}
+	header .wrapper .head {
+		padding: 35px 0 35px 0;
+		font: 700 22px / 4.56px Lato;
+		color: #ffffff;
+}
+		header .wrapper .head h1 span {
+			color: #ee5052;
+}
+
+		header .wrapper .head ul {
+			float: right;
+			margin-top: -5px;
+}
+		header .wrapper .head ul li{
+			display: inline-block;
+			margin: 0 20px 0 0;
+			font: 300 13px / 4.56px Lato;
+}
+
+/*-----------------FIRST BLOCK--------------------*/
+
+.first-block {
+	background-color: #eb5055;
+	height: 600px;
+}
+.iphone {
+	position: absolute;
+	width: 458px;
+	height: 215px;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	top: 170px;
+	left: 390px;
+}
+	.iphone .screen {
+		display: inline-block;
+		width: 333px;
+		height: 188px;
+		background-color: #000;
+		background: url(../images/photo-from-iphone1.png);
+		margin: 10px 5px;
+		border-radius: 5px;
+		border: 4px solid #c9cac9;
+}
+	.iphone .home-btn {
+		display: inline-block;
+		width: 43px;
+		height: 43px;
+		border-radius: 50%;
+		background-color: #fafafa;
+		margin: 0 0 85px 5px;
+}
+		.iphone .home-btn .square {
+			width: 12px;
+			height: 12px;
+			margin: 13px 0 0 13px;
+			border-radius: 2px;
+			border: 2px solid #bababa;
+}
+	.iphone .speeker {
+		display: inline-block;
+		height: 36px;
+		width: 5px;
+		background: #acacac;
+		border-radius: 2px;
+		margin: 0 0 85px 10px;
+}
+	.iphone .cam {
+		display: inline-block;
+		position: relative;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #d8d8d8;
+		margin: 0 0 100px 5px;
+}
+		.iphone .cam span {
+			position: absolute;
+			display: inline-block;
+			background: #eb5055;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			top: 2px;
+			left: 2px;
+}
+.iphone2 {
+	position: absolute;
+	width: 215px;
+	height: 458px;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	top: 55px;
+	left: 85px;
+}
+	.iphone2 .screen {
+		display: inline-block;
+		width: 188px;
+		height: 333px;
+		background-color: #000;
+		background: url(../images/photo-from-iphone2.png);
+		margin: 10px 0 0 10px;
+		border-radius: 5px;
+		border: 4px solid #c9cac9;
+}	
+	.iphone2 .home-btn {
+		display: inline-block;
+		width: 43px;
+		height: 43px;
+		border-radius: 50%;
+		background-color: #fafafa;
+		margin: 5px 0 0 85px;
+}
+		.iphone2 .home-btn .square {
+			width: 12px;
+			height: 12px;
+			margin: 13px 0 0 13px;
+			border-radius: 2px;
+			border: 2px solid #bababa;
+}
+	.iphone2 .speeker {
+		display: inline-block;
+		height: 5px;
+		width: 36px;
+		background: #acacac;
+		border-radius: 2px;
+		margin: 10px 0 0 85px;
+}
+	.iphone2 .cam {
+		display: block;
+		position: relative;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #d8d8d8;
+		margin: 15px 0 0 98px;
+}
+		.iphone2 .cam span {
+			position: absolute;
+			display: inline-block;
+			background: #eb5055;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			top: 2px;
+			left: 2px;
+}
