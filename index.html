@@ -14,13 +14,15 @@
 		<div class="wrapper">
 			<div class="head">
 				<h1>SINGOLO<span>*</span></h1>
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">SERVICES</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
+				<nav id="menu">
+					<ul>
+						<li><a href="#first">HOME</a></li>
+						<li><a href="#information">SERVICES</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#about-us">ABOUT</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</header>
@@ -29,7 +31,7 @@
 <!--FIRST BLOCK-->
 	<section class="first-block">
 		<div class="wrapper">
-			<div class="first">
+			<div class="first" id="first">
 				<a href="#"><img src="images/prev-icon.png" alt="prev"></a>
 				<div class="iphone">
 					<div class="home-btn"><div class="square"></div></div>
@@ -126,11 +128,66 @@
 	<section id="portfolio">
 		<div class="wrapper">
 			<div class="portfolio">
+				<h3>Portfolio</h3>
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				
+				<a href="#" class="buttons">All</a>
+				<a href="#" class="buttons">Web Design</a>
+				<a href="#" class="buttons">Graphic Design</a>
+				<a href="#" class="buttons">Artwork</a>
+				
+				<div class="gallery">
+					<a href="images/portfolio-image1.png" class="photo" rel="gallery"><img src="images/portfolio-image1.png" alt=""></a>
+					<a href="images/portfolio-image2.png" class="photo" rel="gallery"><img src="images/portfolio-image2.png" alt=""></a>
+					<a href="images/portfolio-image3.png" class="photo" rel="gallery"><img src="images/portfolio-image3.png" alt=""></a>
+					<a href="images/portfolio-image4.png" class="photo" rel="gallery"><img src="images/portfolio-image4.png" alt=""></a>
+					<a href="images/portfolio-image5.png" class="photo" rel="gallery"><img src="images/portfolio-image5.png" alt=""></a>
+					<a href="images/portfolio-image6.png" class="photo" rel="gallery"><img src="images/portfolio-image6.png" alt=""></a>
+					<a href="images/portfolio-image7.png" class="photo" rel="gallery"><img src="images/portfolio-image7.png" alt=""></a>
+					<a href="images/portfolio-image8.png" class="photo" rel="gallery"><img src="images/portfolio-image8.png" alt=""></a>
+					<a href="images/portfolio-image9.png" class="photo" rel="gallery"><img src="images/portfolio-image9.png" alt=""></a>
+					<a href="images/portfolio-image10.png" class="photo" rel="gallery"><img src="images/portfolio-image10.png" alt=""></a>
+					<a href="images/portfolio-image11.png" class="photo" rel="gallery"><img src="images/portfolio-image11.png" alt=""></a>
+					<a href="images/portfolio-image12.png" class="photo" rel="gallery"><img src="images/portfolio-image12.png" alt=""></a>
+				</div>
 			</div>
 		</div>
 	</section>
 <!--/PORTFOLIO-->
+
+<!--ABOUT US-->
+	<section id="about-us">
+		<div class="wrapper">
+			<div class="about">
+				<h2>About Us</h2>
+				<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+				
+				<article class="creators">
+					<figure>
+						<img src="images/Adam_Jersen.img.png" alt="Adam Jersen">
+						<figcaption>
+							<h2>Adam Jersen</h2>
+							<p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/Desmord_Miles.img.png" alt="Desmord Miles">
+						<h2>Desmord Miles</h2>
+						<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+					</figure>
+					<figure>
+					
+						<img src="images/Scolar_Visari.img.png" alt="Scolar Visari">
+						<h2>Scolar Visari</h2>
+						<p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+					</figure>
+				</article>
+				
+			</div>
+		</div>
+	</section>
+<!--/ABOUT US-->
 <!------------scripts------------>
 <script src="libs/jquery/jquery-1.12.3.min.js"></script>
 <script src="js/main.js"></script>
