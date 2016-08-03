@@ -76,10 +76,14 @@ input[type="text"] {
 	margin: 25px 10px 25px 0;
 	border: 1px solid #6e7694;
 	text-align: center;
+	padding: 7px;
+	font: 500 12px / 12px Lato;
+	border-radius: 5px;
 }
 .buttons:hover {
 	color: #dedede;
 	border-color: #dedede;
+	transition: color 0.5s;
 }
 .wrapper {
 	position: relative;
@@ -90,9 +94,11 @@ input[type="text"] {
 /*----------------------HEAD----------------------*/
 
 header {
+	position: fixed;
 	width: 100%;
 	background-color: #303441;
 	border-bottom: 10px solid #373b4a;
+	z-index: 1;
 }
 	header .wrapper .head {
 		padding: 35px 0 35px 0;
@@ -116,6 +122,7 @@ header {
 /*-----------------FIRST BLOCK--------------------*/
 
 .first-block {
+	padding: 80px 0 0 0;
 	background-color: #eb5055;
 	border-bottom: 10px solid #ea676b;
 	height: 600px;
@@ -297,38 +304,84 @@ header {
 			text-align: justify;
 			font: 500 12px / 23px Lato;
 }
-.image-list1 {
-	position: absolute;
-	top: 185px;
-	left: -60px;
-}
-.image-list1 li {
-	display: inline-block;
-	position: relative;
-}
-.image-list2 {
-	position: absolute;
-	top: 326px;
-	left: -60px;
-}
-.image-list2 li {
-	display: inline-block;
-	position: relative;
-}
-.circle {
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	border: 2px solid #666d89;
-	border-radius: 50%;
-	top: -16px;
-	margin-left: -16px;
-}
-.image-list1 li:nth-child(2) div, .image-list2 li:nth-child(1) div {
-	margin-left: -20px;
-}
+			.image-list1 {
+				position: absolute;
+				top: 185px;
+				left: -60px;
+			}
+			.image-list1 li {
+				display: inline-block;
+				position: relative;
+			}
+			.image-list2 {
+				position: absolute;
+				top: 326px;
+				left: -60px;
+			}
+			.image-list2 li {
+				display: inline-block;
+				position: relative;
+			}
+		.circle {
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border: 2px solid #666d89;
+			border-radius: 50%;
+			top: -16px;
+			margin-left: -16px;
+		}
+			.image-list1 li:nth-child(2) div, .image-list2 li:nth-child(1) div {
+				margin-left: -20px;
+			}
 
 /*--------------------------------------
 --------------PORTFOLIO-------------
 ---------------------------------------*/
 
+#portfolio {
+	background-color: #303441;
+	padding: 65px 0 65px 0;
+	border-bottom: 10px solid #373b4a;
+}
+.portfolio h3 {
+	font: 500 30px / 30px Lato;
+	margin: 0 0 20px 0;
+}
+
+.photo img {
+	margin: 10px 10px 0 0;
+}
+
+/*--------------------------------------
+--------------ABOUT US-------------
+---------------------------------------*/
+
+#about-us {
+	padding: 65px 0 65px 0; 
+}
+.about h2 {
+	font: 900 30px / 30px Lato;
+	margin: 0 0 25px 0;
+}
+.about h2 + p {
+	line-height: 30px;
+	margin: 0 0 55px 0;
+}
+.about .creators figure {
+	display: inline-block;
+}
+.about .creators img {
+	width: 285px;
+}
+.about .creators h2, .about .creators p {
+	display: block;
+	width: 285px;
+	margin: 0 20px 0 0;
+}
+.about .creators h2 {
+	font: 600 20px / 40px Lato;
+}
+.about .creators p {
+	font: 300 15px / 22px Lato;
+}
