@@ -51,8 +51,8 @@ table {
 
 body {
 	background-color: #f2f2f2;
-	font: 18px "Myriad Pro Regular", sans-serif;
-	color: #dddee3;
+	font: 17px Lato, sans-serif;
+	color: #666d89;
 }
 a {
 	color: #ffffff;
@@ -110,13 +110,14 @@ header {
 		header .wrapper .head ul li{
 			display: inline-block;
 			margin: 0 20px 0 0;
-			font: 300 13px / 4.56px Lato;
+			font: 300 13px / 13px Lato;
 }
 
 /*-----------------FIRST BLOCK--------------------*/
 
 .first-block {
 	background-color: #eb5055;
+	border-bottom: 10px solid #ea676b;
 	height: 600px;
 }
 .iphone {
@@ -241,3 +242,93 @@ header {
 			top: 2px;
 			left: 2px;
 }
+.iphone, .iphone2 {
+	box-shadow: 19px 14px 29px 17px rgba(0,0,0,0.15);
+}
+
+.first-block .wrapper .first a:nth-child(1) {
+	position: absolute;
+	top: 275px;
+	opacity: 0.5;
+}
+	.first-block .wrapper .first a:nth-child(1):hover {
+		opacity: 1;
+		transition: opacity 0.5s;
+}
+.first-block .wrapper .first a:last-child {
+	position: absolute;
+	top: 275px;
+	left: 920px;
+	opacity: 0.5;
+}
+	.first-block .wrapper .first a:last-child:hover {
+		opacity: 1;
+		transition: opacity 0.5s;
+}
+
+/*-------------------MAIN INFORMATION------------------------*/
+
+#information {
+	padding: 65px 0 0 0 ;
+	line-height: 30px;
+	border-bottom: 10px solid #ffffff;
+	height: 470px;
+}
+	#information .inform h2 {
+		font: 900 30px / 4.56px Lato;
+		margin: 0 0 35px 0;
+}
+	#information .inform h2 + p {
+		margin: 0 0 55px 0;
+}
+	.inform ul {
+		float: left;
+		margin-left: -15px;
+}
+		.inform ul li {
+			display: inline-block;
+			width: 220px;
+			margin: 0 0 0 90px;
+}
+		.inform ul li h3 {
+			font: 600 20px / 40px Lato;
+}
+		.inform ul li h3 + p {
+			text-align: justify;
+			font: 500 12px / 23px Lato;
+}
+.image-list1 {
+	position: absolute;
+	top: 185px;
+	left: -60px;
+}
+.image-list1 li {
+	display: inline-block;
+	position: relative;
+}
+.image-list2 {
+	position: absolute;
+	top: 326px;
+	left: -60px;
+}
+.image-list2 li {
+	display: inline-block;
+	position: relative;
+}
+.circle {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border: 2px solid #666d89;
+	border-radius: 50%;
+	top: -16px;
+	margin-left: -16px;
+}
+.image-list1 li:nth-child(2) div, .image-list2 li:nth-child(1) div {
+	margin-left: -20px;
+}
+
+/*--------------------------------------
+--------------PORTFOLIO-------------
+---------------------------------------*/
+
