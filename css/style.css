@@ -54,6 +54,10 @@ body {
 	font: 17px Lato, sans-serif;
 	color: #666d89;
 }
+body *::selection {
+  background: rgba(255,251,102, 0.8);
+  color: rgb(19,188,188);
+}
 a {
 	color: #ffffff;
 	text-decoration: none;
@@ -62,14 +66,42 @@ a:hover {
 	color: #eb5055;
 	transition: color 0.5s;
 }
-input[type="text"] {
+input[type="text"], input[type="email"] {
 	background-color: #ca4549;
 	height: 35px;
 	width: 620px;
-	color: #db6568;
+	color: #efc9cb;
 	padding: 0 10px;
-	margin: 15px 10px 0 20px;
+	margin: 15px 10px 0px 0px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
 }
+textarea {
+	width: 620px;
+	height: 200px;
+	background-color: #ca4549;
+	color: #efc9cb;
+	margin: 15px 10px 0 0px;
+	border: none;
+	border-radius: 5px;
+	overflow: hidden;
+	resize: none;
+	padding: 10px 10px;
+	outline: none;
+}
+
+
+::-webkit-input-placeholder {color:#f48c8f;}
+::-moz-placeholder          {color:#f48c8f;}/* Firefox 19+ */
+:-moz-placeholder           {color:#f48c8f;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#f48c8f;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
 .buttons {
 	display: inline-block;
 	color: #6e7694;
@@ -359,6 +391,7 @@ header {
 
 #about-us {
 	padding: 65px 0 65px 0; 
+	border-bottom: 10px solid #fff;
 }
 .about h2 {
 	font: 900 30px / 30px Lato;
@@ -368,20 +401,138 @@ header {
 	line-height: 30px;
 	margin: 0 0 55px 0;
 }
-.about .creators figure {
+.creators {
+	position: relative;
+}
+	.about .creators figure {
+		display: inline-block;
+		position: relative;
+}
+	.about .creators img {
+		width: 285px;
+}
+	.about .creators h2, .about .creators p {
+		display: block;
+		width: 285px;
+		margin: 0 20px 0 0;
+}
+	.about .creators h2 {
+		font: 600 20px / 40px Lato;
+}
+	.about .creators p {
+		font: 300 15px / 22px Lato;
+}
+	.about .creators ul {
+		float: left;
+		margin: 30px 0 0 0;
+}
+		.about .creators ul li {
+			display: inline-block;
+			width: 34px;
+			height: 35px;
+			margin: 0 5px 0 0;
+			z-index: 1;
+}
+			.about .creators ul li a {
+				display: inline-block;
+				position: relative;
+				width: 40px;
+				height: 40px;
+				z-index: 1;
+}
+		.about .creators .social {
+			position: absolute;
+			width: 160px;
+			height: 35px;
+			top: 425px;
+			left: 0px;
+}
+
+/*---------------------------
+----------CONTACT------------
+----------------------------*/
+
+#contact {
+	position: relative;
+	background-color: #eb5055;
+	color: #f0d8d9;
+	padding: 65px 0 65px 0;
+	border-bottom: 10px solid #ea676b;
+}
+	.contact h2 {
+		font: 900 30px / 30px Lato;
+		margin: 0 0 25px 0;
+	}
+	.contact h2 + p {
+		line-height: 30px;
+		margin: 0 0 55px 0;
+	}
+	.contact form {
+		display: inline-block;
+		width: 640px;
+}
+.contact span {
+	position: absolute;
 	display: inline-block;
+	width: 310px;
+	top: 180px;
+	left: 660px;
 }
-.about .creators img {
-	width: 285px;
+		.contact span h3 {
+			display: inline;
+			font: 500 16px / 30px Lato;
+		}
+		.contact span h3 + p {
+			text-align: justify;
+			font: 500 12px / 20px Lato;
+		}
+		.contact span ul {
+			margin: 30px 0 0 26px;
+			font: 500 12px / 20px Lato;
+		}
+		.contact span img {
+			position: absolute;
+			top: 137px;
+			left: -6px;
+		}
+
+/*-------------------------------------
+---------------FOOTER------------------
+--------------------------------------*/
+
+footer {
+	position: relative;
+	background-color: #303441;
+	padding: 25px 0 25px 0;
 }
-.about .creators h2, .about .creators p {
-	display: block;
-	width: 285px;
-	margin: 0 20px 0 0;
+	.foot h5{
+		display: inline;
+		font: 500 14px / 14px Lato;
 }
-.about .creators h2 {
-	font: 600 20px / 40px Lato;
+.foot img {
+	position: absolute;
+	top: 0px;
+	left: 800px;
+	width: 160px;
+			height: 35px;
 }
-.about .creators p {
-	font: 300 15px / 22px Lato;
+.foot ul {
+	position: absolute;
+	top: 0;
+	width: 180px;
+	left: 800px;
 }
+		.foot ul li {
+			display: inline-block;
+			width: 34px;
+			height: 35px;
+			margin: 0 5px 0 0;
+			z-index: 1;
+}
+			.foot ul li a {
+				display: inline-block;
+				position: relative;
+				width: 35px;
+				height: 35px;
+				z-index: 1;
+		}
